@@ -7,7 +7,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class Repository {
-    val api = RetrofitService().api
+    private val api = RetrofitService().loveAPI
 
     fun getData(firstName: String, secondName: String): MutableLiveData<LoveModel> {
         val mutableLiveData = MutableLiveData<LoveModel>()

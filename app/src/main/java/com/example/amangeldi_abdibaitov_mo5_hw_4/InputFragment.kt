@@ -23,7 +23,13 @@ class InputFragment : Fragment(R.layout.fragment_input) {
                 binding.edYourName.text.toString(),
                 binding.edPartnerName.text.toString()
             )
-            findNavController().navigate(R.id.action_inputFragment_to_resultFragment)
+            val bundle = Bundle().apply {
+                putString(ResultFragment.YOUR_NAME_ARG, binding.edYourName.text.toString())
+                putString(ResultFragment.PARTNER_NAME_ARG, binding.edPartnerName.text.toString())
+            }
+//            val fragment = InputFragment()
+//            fragment.arguments = bundle
+            findNavController().navigate(R.id.action_inputFragment_to_resultFragment, bundle)
         }
     }
 }

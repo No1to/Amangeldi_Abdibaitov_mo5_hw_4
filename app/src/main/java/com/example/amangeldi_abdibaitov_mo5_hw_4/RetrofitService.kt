@@ -7,5 +7,6 @@ class RetrofitService {
     val retrofit = Retrofit.Builder().baseUrl("https://love-calculator.p.rapidapi.com/")
         .addConverterFactory(GsonConverterFactory.create()).build()
 
-    val api = retrofit.create(LoveAPI::class.java)
+    val loveAPI = retrofit.create(LoveAPI::class.java)
+
 }
