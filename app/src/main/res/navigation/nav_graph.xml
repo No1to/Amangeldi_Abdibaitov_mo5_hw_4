@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/inputFragment">
 
     <fragment
         android:id="@+id/inputFragment"
-        android:name="com.example.amangeldi_abdibaitov_mo5_hw_4.InputFragment"
+        android:name="com.example.amangeldi_abdibaitov_mo5_hw_4.ui.InputFragment"
         android:label="InputFragment" >
         <action
             android:id="@+id/action_inputFragment_to_resultFragment"
@@ -14,7 +15,12 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.example.amangeldi_abdibaitov_mo5_hw_4.ResultFragment"
+        android:name="com.example.amangeldi_abdibaitov_mo5_hw_4.ui.ResultFragment"
         android:label="ResultFragment" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.amangeldi_abdibaitov_mo5_hw_4.ui.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" />
 
 </navigation>

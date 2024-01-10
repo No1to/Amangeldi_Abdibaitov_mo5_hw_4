@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    tools:context=".ResultFragment">
+    tools:context=".ui.ResultFragment">
 
    <!-- <com.google.android.material.textview.MaterialTextView
         android:id="@+id/percentage"

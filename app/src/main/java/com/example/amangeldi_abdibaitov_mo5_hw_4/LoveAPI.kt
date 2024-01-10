@@ -1,5 +1,6 @@
 package com.example.amangeldi_abdibaitov_mo5_hw_4
 
+import com.example.amangeldi_abdibaitov_mo5_hw_4.model.LoveModel
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Header
