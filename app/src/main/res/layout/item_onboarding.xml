@@ -17,7 +17,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_skip"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+  <!--  <ImageView
         android:id="@+id/imgV"
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -25,7 +36,7 @@
         android:src="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_skip" />
+        app:layout_constraintTop_toBottomOf="@id/tv_skip" />-->
 
     <TextView
         android:id="@+id/tv_title"
@@ -37,7 +48,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgV"
+        app:layout_constraintTop_toBottomOf="@id/animationView"
         tools:text="Noito" />
 
     <TextView
